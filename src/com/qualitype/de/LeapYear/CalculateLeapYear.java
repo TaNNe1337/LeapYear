@@ -11,12 +11,12 @@ public class CalculateLeapYear {
 			leapYears.add(i);
 		}
 		for (Integer integer : leapYears) {
-			System.out.println(integer + " :" + isLeaYear(integer));
+			System.out.println(integer + " :" + isLeapYear(integer));
 		}
 
 	}
 	
-	private static boolean isLeaYear(int year) {
+	private static boolean isLeapYear(int year) {
 		if (year % 4 == 0) return true;
 		if(year % 400 == 0) return true;
 		if(year % 100 == 0) return false;
